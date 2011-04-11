@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <script src="underscore.js"></script>
+    <script src="jquery.js"></script>
+    <script src="backbone.js"></script>
+    <style type='text/css'>
+      textarea {
+        height:500px;
+        width:500px;
+      }
+      input[type="text"] {
+        width: 450px;
+      }
+      #chatArea {
+        width:600px;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="chatArea">
+      <textarea id='chatHistory'></textarea>
+      <form method="post" action="#" id= 'chatForm' name="newMessage" onsubmit="return false">
+        <input name= 'newMessageString' type="text" />
+        <input type="submit" value='send'/>
+      </form>
+    </div>
+  </body>
+
+  <script src="application.js"></script>
+</html>
+
